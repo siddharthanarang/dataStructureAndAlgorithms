@@ -10,15 +10,12 @@
  };
 
  const nestedEvenSum = (sampleObject) => {
-   console.log('sampleObject is ',sampleObject);
-
 
    const objectKeys = Object.keys(sampleObject);
    if(objectKeys.length === 0){
      return 0;
    }
    const firstKey = objectKeys[0];
-   console.log('firstKey is ',firstKey);
    let sum =0;
 
    if(Object.prototype.toString.call(sampleObject[firstKey]) === '[object Object]'){
