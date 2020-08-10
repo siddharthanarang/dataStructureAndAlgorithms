@@ -28,7 +28,10 @@ const reverseStringRecursionApproach = (sampleString) => {
     return '';
   }
 
-  return reverseStringRecursionApproach(sampleString.substr())
+  return reverseStringRecursionApproach(sampleString.substr(1)).concat(sampleString[0]);
 
 };
+
+console.log('Reversed String Using InBuild Functions ', reverseStringRecursionApproach(sampleString));
+
 
