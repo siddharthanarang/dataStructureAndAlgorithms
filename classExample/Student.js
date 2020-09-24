@@ -3,6 +3,16 @@ class Student {
     this.firstName = firstName;
     this.lastName = lastName;
     this.year = year;
+    this.absent  =0;
+  }
+
+  fullName(){
+    return `${this.firstName} ${this.lastName}`;
+  };
+
+  markAbsent(){
+   this.absent++;
+    return `${this.fullName()} is absent ${this.absent} times`;
   }
 }
 
@@ -17,3 +27,6 @@ console.log(`First Student Name is ${firstStudent.firstName} ${firstStudent.last
 firstStudent.year = 2018;
 
 console.log(`First Student Name is ${firstStudent.firstName} ${firstStudent.lastName} of year ${firstStudent.year}`);
+
+console.log(firstStudent.markAbsent());
+console.log(firstStudent.markAbsent());
