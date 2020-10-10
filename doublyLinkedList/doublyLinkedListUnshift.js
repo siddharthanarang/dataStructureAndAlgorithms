@@ -39,7 +39,7 @@ class DoublyLinkedList{
       newNode.next = this.head;
       this.head = newNode;
     }
-    return list;
+    return this;
   }
 }
 
