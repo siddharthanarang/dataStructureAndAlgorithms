@@ -21,7 +21,7 @@ class DoublyLinkedList {
       this.tail = newNode;
     }
     else{
-      this.tail.prev = newNode;
+      this.tail.next = newNode;
       newNode.prev = this.tail;
       this.tail = newNode;
     }
