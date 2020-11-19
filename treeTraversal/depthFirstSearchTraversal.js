@@ -45,10 +45,24 @@ class Tree{
       return [];
     }
     let visited = [];
-    let traversal = (currentNode) => {
+    const traversal = (currentNode) => {
       visited.push(currentNode.val);
       if(currentNode.left) traversal(currentNode.left);
       if(currentNode.right) traversal(currentNode.right);
+    };
+    traversal(this.root);
+    return visited;
+  }
+
+  postOrder(){
+    if(!this.root){
+      return [];
+    }
+    let visited = [];
+    const traversal = (currentNode) => {
+      if(currentNode.left) traversal(currentNode.left);
+      if(currentNode.right) traversal(currentNode.right);
+      visited.push(currentNode.val);
     };
     traversal(this.root);
     return visited;
@@ -66,3 +80,4 @@ console.log(`Insert element into the Tree `, tree.insertion(20));
 
 
 console.log(`Pre Order Traversal of tree is `, tree.preOrder());
+console.log(`Post Order Traversal of tree is `, tree.postOrder());
