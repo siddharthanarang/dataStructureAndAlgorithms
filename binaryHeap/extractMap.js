@@ -1,3 +1,5 @@
+// Max Binary Heap 
+
 class BinaryHeap{
   constructor(){
     this.values = [];
