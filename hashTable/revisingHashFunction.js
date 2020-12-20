@@ -12,6 +12,6 @@ const hash = (key, arrayLength) => {
   
 };
 
-console.log('Hash is ', hash('pink',10));
-console.log('Hash is ', hash('orangered',10));
-console.log('Hash is ', hash('cyan',10));
+console.log('Hash is ', hash('pink',13));
+console.log('Hash is ', hash('orangered',13));
+console.log('Hash is ', hash('cyan',13));
