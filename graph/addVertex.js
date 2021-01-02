@@ -1,3 +1,4 @@
+// It is a undirected Graph
 class Graph {
   constructor(){
     this.adjacencyList = {};
