@@ -31,10 +31,8 @@ class Graph {
       if(!graphList[currentNode]){
         return;
       }
-      if(!visited[currentNode]){
-        result.push(currentNode);
-        visited[currentNode] = true;
-      }
+      result.push(currentNode);
+      visited[currentNode] = true;
       for(let key of graphList[currentNode]){
         if(!visited[key]){
           dfs(key);
